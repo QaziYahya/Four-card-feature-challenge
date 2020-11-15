@@ -1,0 +1,52 @@
+@media (max-width: 600px) {
+  body {
+    overflow: visible;
+  }
+  .top-txt-1,
+  .top-txt-2 {
+    font-size: 20px;
+  }
+  .lead {
+    padding: 5px;
+  }
+
+  #section-a {
+    padding-top: 15%;
+    .cards {
+      padding-top: 20%;
+      grid-template-areas:
+        'card-1'
+        'card-2'
+        'card-3'
+        'card-4';
+      margin-left: 0;
+      align-items: center;
+      justify-content: center;
+
+      .card-2 {
+        top: 0;
+      }
+
+      .card-4 {
+        top: 0;
+        left: 0;
+      }
+
+      .card {
+        width: 320px;
+      }
+
+      .img-1,
+      .img-2,
+      .img-3,
+      .img-4 {
+        position: relative;
+        left: 260px;
+        top: 35px;
+      }
+    }
+    .cards:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
